@@ -1,0 +1,40 @@
+---
+title: "Investigation of 2019 CES Phone Survey Data"
+author: "YUERAN HU"
+date: 2020-09-2T21:13:14-05:00
+bibliography: "references.bib"
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+
+
+<p>Code and data supporting this analysis is available at: “GitHub URL”.</p>
+<div id="part1.-abstract" class="section level1">
+<h1>Part1. Abstract:</h1>
+<p>We observe and analyze the 2019 CES Phone Survey data. By following graphs and model, we found that people with higher education level have higher satisfaction to Canadian government. This result is important, since we can predict people’s satisfaction to government by their education level, and Canadian education level has always been a concern for citizens and new immigrants.
+We use <span class="citation">Wickham et al. (2019)</span> <span class="citation">Wickham et al. (2020)</span> <span class="citation">Waring et al. (2020)</span> <span class="citation">Wickham, Hester, and Chang (2020)</span>.</p>
+</div>
+<div id="part2.-introduction" class="section level1">
+<h1>Part2. Introduction</h1>
+<p>In Canada, 68 percent of Canadians aged 25 to 64 attained some form of post-secondary education, which is 24 percent above the OECD average of 44 percent (Statistics Canada, 2018).British Columbia, Ontario, and Alberta are the top performers among all the provinces, earning “B” grades on the Education and Skills report card (ConferenceBoard 2020).For people’s satisfaction of government in Canada, Research Co. and Glacier Media found that Atlantic Canada has the largest proportion of residents who are pleased with the federal government (71%), followed by Ontario (68%), Alberta (66%), British Columbia (65%), Saskatchewan and Manitoba (also 65%) and Quebec (58%) in 2020(Mario Canseco 2020). We found that some provinces have a high satisfaction proportion to government also have a good performers on Education. This information is important, and it lead us to explore the relation between education level and government satisfaction.</p>
+<p>In this investigation, we observe and analyze the 2019 CES Phone Survey data. Under the 2019 CES Phone Survey data, we will focus on two variables: interviewer’s highest education level(in level -9 to 11) and interviewer’s satisfaction to Canada government(in level -9 to 4). By graphs, model and analysis, we found that people with higher education level have higher satisfaction to Canadian government. There is a positive linear relation between them.</p>
+<p>Performed 2019 CES Phone Survey data diagnostics and fitted a linear regression model, the result showed that people with higher education level have higher satisfaction to Canadian government. However, we might lack of considering the distribution of people’s education level and satisfaction of government is not a normal distribution, so the data might affect our results. Secondly, we did not consider of lurking variable, which is a variable that is not included as (level of education and satisfaction of government) two variables in the analysis but can affect the interpretation of relationships between these two variables, like interviewers’ age, gender, income, and so on. For improvement, we can find the residual of our model and make a residual plot of it, to see if our model is fitted. For future study, we can study more about what factors can influence people’s government satisfaction and level of education.</p>
+</div>
+<div id="part7.-references" class="section level1 unnumbered">
+<h1>Part7. References</h1>
+<div id="refs" class="references">
+<div id="ref-citetiskimr">
+<p>Waring, Elin, Michael Quinn, Amelia McNamara, Eduardo Arino de la Rubia, Hao Zhu, and Shannon Ellis. 2020. <em>Skimr: Compact and Flexible Summaries of Data</em>.</p>
+</div>
+<div id="ref-citetidyverse">
+<p>Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to the tidyverse.” <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.</p>
+</div>
+<div id="ref-citetidplyr">
+<p>Wickham, Hadley, Romain François, Lionel Henry, and Kirill Müller. 2020. <em>Dplyr: A Grammar of Data Manipulation</em>.</p>
+</div>
+<div id="ref-citetidevtools">
+<p>Wickham, Hadley, Jim Hester, and Winston Chang. 2020. <em>Devtools: Tools to Make Developing R Packages Easier</em>.</p>
+</div>
+</div>
+</div>
